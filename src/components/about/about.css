@@ -32,7 +32,7 @@
         position: relative;
         background-color: transparent;
         bottom: 33.2vw;
-        background-image: url('images/bgSquares.png');
+        background-image: url('/images/bgSquares.png');
         opacity: 10%;
         pointer-events: none;
     }

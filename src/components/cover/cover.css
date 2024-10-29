@@ -19,7 +19,7 @@
         pointer-events: none;
         width: 100%;
         height: calc(var(--width_dim)/1.76);
-        background-image: url('images/profilePic.png'); /* Path to your mask image */
+        background-image: url('/images/profilePic.png'); /* Path to your mask image */
         background-size: 60vw; /* Cover the div */
         background-position: top 2vw left 40vw;
         opacity: 20%;
