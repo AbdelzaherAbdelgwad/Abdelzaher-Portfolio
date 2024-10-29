@@ -37,13 +37,13 @@
         scale: 1.02;
     }
     .firstProject{
-        background-image: url(images/game-center.png);
+        background-image: url("./images/game-center.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
     }
     .secondProject{
-        background-image: url(images/Iot-platform.png);
+        background-image: url("./images/Iot-platform.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
