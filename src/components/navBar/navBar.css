@@ -34,8 +34,6 @@
     background-color:gray;
     border-radius:1vw;
     padding:.5vw;
-    -webkit-text-fill-color: blue;
-
 }
 .notClicked{
     border-radius:.1vw;
