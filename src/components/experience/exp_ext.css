@@ -59,10 +59,8 @@
     .gridSquare{
         border: white 1px solid;
         align-content: center;
-        
         width: 13vw;
-        height: 8vw
-      
+        height: 8vw  
     }
     .gridSquare:hover{
         cursor: pointer;

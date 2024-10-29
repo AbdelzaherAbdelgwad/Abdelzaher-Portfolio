@@ -1,0 +1,52 @@
+.projectsContainer{
+    height: calc(var(--width_dim) / 1.77);
+    width: var(--width_dim);
+    border-radius: 10px;
+    /* border: 1px rgb(117, 117, 117) solid; */
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    justify-content: space-around;
+
+    .projectTitle{
+        color: #4EFF00;
+        caret-color: transparent;
+        font-size: 10vw;
+        font-weight: 900;
+        filter: drop-shadow(15px 5px 3px #1a5500);
+    }
+    .projectTitle:hover{
+        text-shadow: 12px 8px 20px #1a5500;
+        scale: 1.03;
+        cursor: pointer;
+    }
+    .projectWindow{
+        width: 50vw;
+        height: 25vw;
+        background-color: rgb(255, 255, 255);
+        margin: 1vw;
+        border-radius: 1vw;
+        caret-color: transparent;
+    }
+    .projectWindow:hover{
+        filter: drop-shadow(0px 0px 20px white);
+        cursor: pointer;
+        scale: 1.02;
+    }
+    .firstProject{
+        background-image: url(images/game-center.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .secondProject{
+        background-image: url(images/Iot-platform.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+}

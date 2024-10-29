@@ -23,7 +23,7 @@
   --width_dim: 99vw;
   --height_dim: 99.5vh;
   overflow-x: hidden;
-
+  scroll-behavior: smooth;
 }
 /* scroll bar */
 :root::-webkit-scrollbar {
