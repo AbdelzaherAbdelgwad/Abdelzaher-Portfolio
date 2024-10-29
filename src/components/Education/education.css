@@ -1,0 +1,59 @@
+.educationContainer {
+    height: calc(var(--width_dim)/2.2);
+    border-radius: 10px;
+    /* border: 1px solid white; */
+    padding: 2vw 0 0 5vw;
+    overflow: hidden;
+    h2{
+        color: white;
+        width: 90vw;
+        font-size: 2vw;
+        text-align: justify;
+    }
+    p{
+        margin: 0px;
+    }
+    span{
+        color: #4EFF00;
+    }
+
+    .eduTitle_1 {
+        width: 180vw;
+        height: 4vw;
+        background-color: #4EFF00;
+        transform: rotate(5deg);
+        position: relative;
+        right: 70vw;
+        opacity: 50%;
+    }
+    .eduTitle_2 {
+        width: 180vw;
+        height: 4vw;
+        background-color: #4EFF00;
+        transform: rotate(-5deg);
+        position: relative;
+      
+        right: 70vw;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+        font-weight: 900;
+        font-family: fantasy;
+        margin: 0px;
+    }
+    .uniLogo{
+        opacity: 10%;
+        position: absolute;
+        top: 120vw;
+        left: 50vw;
+        width: 40vw;
+        height: auto;
+        filter: drop-shadow(0 0 0.9rem #4EFF00) blur(.4rem);    }
+}
+
+@media screen and (max-width: 1400px) {
+    div.bgShapes {
+        display: none;
+    }
+}

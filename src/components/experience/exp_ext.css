@@ -1,0 +1,71 @@
+.expExtContainer{
+    height: calc(var(--width_dim)/1.77);
+    border-radius: 10px;
+    /* border: 1px solid white; */
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+
+    .backGroundImg{
+        height: 100vw;
+        width: 125vw;
+        background-image: url(images/grid_2.png);
+        background-size: 237vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: drop-shadow(-0px 0px #4EFF00);
+        position: absolute;
+        z-index: -1;
+        top: -7vw;
+        opacity: 15%;
+        transform: rotate(10deg);
+        left: -10vw;
+    }
+    h1{
+        color:#4EFF00;
+        font-family: fantasy;
+        margin-top: 0%;
+        text-transform: uppercase;
+        font-size: 3vw;
+        letter-spacing: .3vw;
+        font-style: italic;
+    }
+    .title_1{
+        color: #000000;    
+        margin-top: 7.5vw;    
+        /* -webkit-text-stroke: .00000000000001px #4EFF00; */
+        text-shadow:
+            -1px -1px 0#4EFF00,  
+            1px -1px 0 #4EFF00,
+            -1px 1px 0 #4EFF00,
+            1px 1px 0 #4EFF00;
+    }
+    .gridBlock{
+        display: flex;
+        justify-content: center;
+        margin: 5vw;
+        h2{
+            color: white;
+            font-size: 2vw;
+            margin: auto;
+            text-transform: uppercase;
+        }
+
+    }
+    .firstBlock{
+        -webkit-text-fill-color: #4EFF00;
+    }
+    .gridSquare{
+        border: white 1px solid;
+        align-content: center;
+        
+        width: 13vw;
+        height: 8vw
+      
+    }
+    .gridSquare:hover{
+        cursor: pointer;
+        filter: drop-shadow(0px 0px 5px #4EFF00);
+    }
+}

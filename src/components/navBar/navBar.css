@@ -1,0 +1,32 @@
+.navBar{
+    height: 3vw;
+    width: 50vw;
+    background-color: rgb(80, 80, 80);
+    margin-top: 1vw;
+    margin-left: 2vw;
+    position: fixed;
+    border-radius: 50px;
+    display: flex;
+    padding: 0 1vw;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    caret-color: transparent;
+    opacity: 20%;
+    h2{
+        margin: 1vh;
+        cursor: pointer;
+        font-size: 2vw;
+    }
+    a:hover{
+        color: black;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.navBar:hover{
+    opacity: 100%;
+    
+}
