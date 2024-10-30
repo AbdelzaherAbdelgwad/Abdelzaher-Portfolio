@@ -3,7 +3,7 @@ export const Experience = () => {
   return (
     <div className="expContainer" id='experience'>
       <div>
-        <h1 className='fontFam-italic'>FORNTEND DEVELOPMENT</h1>
+        <h1 className='fontFam-italic'>FRONTEND DEVELOPMENT</h1>
         <div className='tabletScreen fontFam-regular  '>
           <div className='tabRow'>
             <div className="expCard">

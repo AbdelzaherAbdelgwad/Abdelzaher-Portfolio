@@ -51,9 +51,3 @@
         height: auto;
         filter: drop-shadow(0 0 0.9rem #4EFF00) blur(.4rem);    }
 }
-
-@media screen and (max-width: 1400px) {
-    div.bgShapes {
-        display: none;
-    }
-}

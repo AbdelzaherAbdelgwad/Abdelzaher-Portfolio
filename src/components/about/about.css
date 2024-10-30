@@ -4,7 +4,7 @@
     background-color:transparent;
     border: 1px rgb(117, 117, 117) solid;
     border-radius: 10px;
-    
+    overflow: hidden;
     a{
         text-decoration: none;
         color: #4EFF00;
@@ -27,13 +27,17 @@
         color: #4EFF00;
     }
     .bgShapes{
-        height: calc(var(--width_dim)/1.778);
+        height: 150vw;
         width: var(--width_dim);
         position: relative;
         background-color: transparent;
-        bottom: 33.2vw;
-        background-image: url('/Abdelzaher-Portfolio/images/bgSquares.png');
-        opacity: 10%;
+        bottom: 85vw;
+        background-image: url(/Abdelzaher-Portfolio/images/crackBg.png);
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0px 0px 3px #4EFF00);
+        opacity: 20%;
+        transform: rotate(90deg);
         pointer-events: none;
     }
 
@@ -56,8 +60,8 @@
         scale: 1.1;
     }
 }
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
     div.bgShapes{
-        display: none;
+        display:contents;
     }
-}
+} */
