@@ -1,23 +1,43 @@
 import "./exp_ext.css";
+import "animate.css/animate.compat.css"
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export const Experience_ext = () => {
+  const frontendExp = [
+    {name:"ANGULAR FRAMEWORK"},
+    {name:"Dependency Injection"},
+    {name:"Dynamic User Interfaces"},
+    {name:"data binding"}
+  ]
+  const BackendExp = [
+    {name:"Spring Boot"},
+    {name:"Java"},
+    {name:"Spring Security"},
+    {name:"RESTful API Design"},
+    {name:"MySQL Proficiency"}
+  ]
+
   return (
     <div className="expExtContainer">
-        <div className="backGroundImg"></div>
+        <div className="backGroundImg"/>
+
         <h1 className="title_1">Additional Front-End Technologies</h1>
         <div className="gridBlock fontFam-regular">
-            <div className="gridSquare firstBlock"><h2>ANGULAR FRAMEWORK</h2></div>
-            <div className="gridSquare"><h2>Dependency Injection</h2></div>
-            <div className="gridSquare"><h2>Dynamic User Interfaces</h2></div>
-            <div className="gridSquare"><h2>data binding</h2></div>
+            {frontendExp.map(({name},index)=>{
+              return (<ScrollAnimation key={name} animateIn="fadeInBottomRight" delay={(index+1)*50 +100}>
+              <div className={index === 0?"gridSquare firstBlock":"gridSquare"}><h2>{name}</h2></div>
+              </ScrollAnimation>)
+            })}
         </div>
+
         <h1 className="title_2">Back-End Development & Database Management</h1>
         <div className="gridBlock fontFam-regular">
-            <div className="gridSquare firstBlock"><h2>Spring Boot</h2></div>
-            <div className="gridSquare"><h2>JAva</h2></div>
-            <div className="gridSquare"><h2>Spring Security</h2></div>
-            <div className="gridSquare"><h2>RESTful API Design</h2></div>
-            <div className="gridSquare"><h2>MySQL Proficiency</h2></div>
+        {BackendExp.map(({name},index)=>{
+              return (<ScrollAnimation key={name} animateIn="fadeInUp" delay={(index+1)*50 +100}>
+              <div className={index === 0?"gridSquare firstBlock":"gridSquare"}><h2>{name}</h2></div>
+              </ScrollAnimation>)
+            })}
+
         </div>
     </div>
   )

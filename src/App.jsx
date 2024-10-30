@@ -7,29 +7,31 @@ import { Experience } from './components/experience/exp'
 import { Experience_ext } from './components/experience/exp_ext'
 import { Projects } from './components/projects/projects'
 import { Contact } from './components/contact/contact'
-// import { useNavigate } from 'react-router-dom';
-// import { useEffect } from 'react';
-
+import "animate.css/animate.compat.css"
+import ScrollAnimation from 'react-animate-on-scroll';
+import { useEffect } from 'react'
 function App() {
-  // const navigate = useNavigate();
-
-  //   useEffect(() => {
-  //     const isRefresh = window.history.state === null;
-
-  //     if (isRefresh) {
-  //         navigate('/'); // Redirect to home route
-  //     }
-  //   }, [navigate]);
+  const components = [
+    { component: <About />},
+    { component: <Education />},
+    { component: <Experience />},
+    { component: <Experience_ext /> },
+    { component: <Projects /> },
+    { component: <Contact />}
+];
+useEffect(() => {
+  window.location.href = "#";
+}, []);
+   
   return (
     <>
       <NavBar/>
-      <Cover/>
-      <About/>
-      <Education/>
-      <Experience/>
-      <Experience_ext/>
-      <Projects/>
-      <Contact/>
+      <Cover />
+      {components.map(({ component }, index) => (
+                <ScrollAnimation key={index} animateIn="fadeIn" delay={200}>
+                    {component}
+                </ScrollAnimation>
+            ))}
     </>
   )
 }

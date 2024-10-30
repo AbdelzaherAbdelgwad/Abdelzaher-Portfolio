@@ -2,10 +2,10 @@
 import { useState } from "react";
 import "./contact.css"
 export const Contact = () => {
-    const [name,setName] = useState('')
-    const [email,setEmail] = useState('')
-    const [message,setMessage] = useState('')
-
+    const [name,setName] = useState()
+    const [email,setEmail] = useState()
+    const [message,setMessage] = useState()
+    
     function debounce(func,delay = 500) {
         let timeoutId = null;
         return function (...args) {
@@ -31,11 +31,16 @@ export const Contact = () => {
     const debouncedHandleChange = debounce(handleChange)
 
     function handleClick() {
-        if(name && email && message){
-            const subject = "Hi I am " + name
-            const body = "Email: " + email + "%0A%0A" + "Message: " + message;
-            window.location = ("mailto:abdelzaher.abdelgwad@gmail.com?subject="+ subject + "&body=" + body)        
-        }
+       
+            if(name!= null && email!= null && message != null){
+                const subject = "Hi I am " + name
+                const body = "Email: " + email + "%0A%0A" + "Message: " + message;
+                window.location = ("mailto:abdelzaher.abdelgwad@gmail.com?subject="+ subject + "&body=" + body)        
+            }else{
+                console.log(name,email,message)
+            }
+        
+        
 
     }
   return (
@@ -60,7 +65,7 @@ export const Contact = () => {
                 <input placeholder="Email" type="email" name="email" onChange={(e)=>{debouncedHandleChange(e)}}></input>
                 <h3>Message:</h3>
                 <textarea placeholder="Write down your message" name="message" onChange={(e)=>{debouncedHandleChange(e)}}></textarea>
-                <button onClick={handleClick}>SEND</button>
+                <button onClick={handleClick} disabled = {!(email && name && message)}>SEND</button>
             </div>
         </div>
     </div>
