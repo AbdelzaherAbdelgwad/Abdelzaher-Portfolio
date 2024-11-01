@@ -16,13 +16,13 @@
         opacity: 50%;
         width: 35vw;
     }
-    .mask {
+    .bgImage {
         pointer-events: none;
         width: 100%;
         height: calc(var(--width_dim)/1.76);
         background-image: url('/Abdelzaher-Portfolio/images/profilePic.png'); /* Path to your mask image */
         background-size: 60vw; /* Cover the div */
-        filter: drop-shadow(-.5vw 0vw 10px #000000) drop-shadow(.5vw 0vw 10px #d3d3d372) drop-shadow(0px -2vw 30000px #4EFF00);
+        filter: drop-shadow(-.5vw 0vw 10px #000000) drop-shadow(.5vw 0vw 10px #d3d3d372) drop-shadow(0px -2vw 20vw #4EFF00);
         background-position: top 2vw left 40vw;
         opacity: 25%;
         background-repeat: no-repeat;
@@ -31,6 +31,7 @@
         top: 20px;
         
     }
+
     
     
     
@@ -43,5 +44,47 @@
     div{
         margin: auto;
         align-self: center;
+    }
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: .25;
+
+    }
+}
+.appear{
+    animation: appear 3s ease-in-out 1;
+}
+.appear_1{
+    animation: appear 3s  ease-in-out 1 backwards;
+}
+.appear_2{
+    animation: appear 3s 1s ease-in-out 1 backwards;
+}
+@media screen and (max-width: 1024px) {
+    div.coverContainer{
+        height: 100vh;
+    }
+    div.coverGrid{
+        transform: translateX(37.5vw) scale(1.5);
+        height: 130vh;
+    }
+    div.bgImage.appear{
+        top: 22vh;
+        left: -27vw;
+        scale: 1.5;
+    }
+    div.coverGrid p{
+        font-size: 3vw;
+        margin-top: 1vw;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    div.coverGrid div{
+        scale: 1.5;
     }
 }

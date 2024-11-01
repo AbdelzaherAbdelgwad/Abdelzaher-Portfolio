@@ -4,6 +4,7 @@
     /* border: 1px solid white; */
     padding: 2vw 0 0 5vw;
     overflow: hidden;
+    caret-color: transparent;
     h2{
         color: white;
         width: 90vw;
@@ -15,6 +16,10 @@
     }
     span{
         color: #4EFF00;
+    }
+    .eduTitleContainer{
+        position: relative;
+        top: -35vw;
     }
 
     .eduTitle_1 {
@@ -32,7 +37,6 @@
         background-color: #4EFF00;
         transform: rotate(-5deg);
         position: relative;
-      
         right: 70vw;
     }
 
@@ -44,10 +48,54 @@
     }
     .uniLogo{
         opacity: 10%;
-        position: absolute;
-        top: 120vw;
+        position: relative;
+        top: -25vw;
         left: 50vw;
         width: 40vw;
         height: auto;
         filter: drop-shadow(0 0 0.9rem #4EFF00) blur(.4rem);    }
 }
+@keyframes translate {
+    from{
+        transform: translateX(0vw);
+    }
+    to{
+        transform: translateX(16.2vw);
+
+    }
+}
+.translate {
+    animation: translate 50s linear infinite;
+}
+.translateBackwords {
+    animation: translate 50s linear infinite reverse;
+}
+
+@media screen and (max-width: 1024px) {
+    div#education{
+        height: 100vh;
+    }
+    div#education h2{
+        font-size: 4.5vw;
+        text-align: left;
+    }
+    div#education .eduTitleContainer{
+        scale: 2;
+        top: -35vh;
+    }
+    div#education .uniLogo{
+        width: 45vh;
+        top: -40vh;
+        left: 18vw;
+    }
+ }
+ @media screen and (max-width: 500px) {
+    div#education h2{
+        font-size: 6.5vw;
+        text-align: left;
+    }
+    div#education .eduTitleContainer{
+        scale: 2;
+        top: -45vh;
+    }
+ }

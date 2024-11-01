@@ -12,7 +12,7 @@ export const About = () => {
         my expertise in front-end design, RESTful API development, and database optimization to drive innovation and deliver 
         high-quality software solutions /&gt; </p>
         <button onClick={handleClick}><a>CONTACT ME</a>  &gt;</button>
-        <div className='bgShapes'/>
+        <div className='bgImage'/>
         
     </div>
   )

@@ -26,13 +26,13 @@ export const Education = () => {
       <img src='images\FayoumUniLogo.png' className='uniLogo'></img>
       <div className='eduTitleContainer'>
         <div className='eduTitle_1'>
-          <h1>
-            <strong>EDUCATION. EDUCATION. EDUCATION. EDUCATION. EDUCATION. EDUCATION.
+          <h1 className='translate'>
+            <strong >EDUCATION. EDUCATION. EDUCATION. EDUCATION. EDUCATION. EDUCATION.
               EDUCATION. EDUCATION. EDUCATION. EDUCATION.</strong>
           </h1>
         </div>
         <div className='eduTitle_2'>
-          <h1>
+          <h1 className='translateBackwords'>
             <strong>EDUCATION. EDUCATION. EDUCATION. EDUCATION. EDUCATION. EDUCATION.
               EDUCATION. EDUCATION. EDUCATION. EDUCATION.</strong>
           </h1>

@@ -143,3 +143,6 @@
 .rotate {
     animation: rotate 50s linear infinite;
 }
+@media screen and (max-width: 1024px) {
+    /* make it responsive */
+}
