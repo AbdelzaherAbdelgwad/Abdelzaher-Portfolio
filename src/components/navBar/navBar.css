@@ -72,6 +72,7 @@
     background-image: url("/Abdelzaher-Portfolio/images/navBarIcon.png");
     background-position: center;
     background-size: 5vh;
+    z-index: 2;
 }
 .toggleNavBubble:hover{
     cursor: pointer;

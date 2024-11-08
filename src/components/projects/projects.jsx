@@ -13,12 +13,13 @@ export const Projects = () => {
   }
   return (
     <div className="projectsContainer" id="projects">
+        
+        <div>
+            <h1 className="fontFam-italic projectTitle" onClick={(e)=>{handleClick(e)}}>PROJECTS</h1>
+        </div>
         <div>
             <div className="projectWindow firstProject" onClick={(e)=>{handleClick(e)}}></div>
             <div className="projectWindow secondProject" onClick={(e)=>{handleClick(e)}}></div>
-        </div>
-        <div>
-            <h1 className="fontFam-italic projectTitle" onClick={(e)=>{handleClick(e)}}>PROJECTS</h1>
         </div>
     </div>
   )

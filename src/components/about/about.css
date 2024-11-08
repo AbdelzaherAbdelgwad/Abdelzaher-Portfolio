@@ -75,16 +75,16 @@
         margin-bottom: 3vw;
     }
     div#about p{
-        font-size: 6.5vw;
+        font-size: 5vh;
     }
     div#about button{
         font-size: 3vw;
         padding: 2vw;
     }
  }
- @media screen and (max-width: 500px) {
+ @media screen and (max-width: 530px) {
     div#about h1{
-        font-size: 7vw;
+        font-size: 4.2vh;
         margin-bottom: 3vw;
     }
     div#about p{

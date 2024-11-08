@@ -73,7 +73,7 @@
 
 @media screen and (max-width: 1024px) {
     div#education{
-        height: 100vh;
+       height: 100vh;
     }
     div#education h2{
         font-size: 4.5vw;

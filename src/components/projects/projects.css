@@ -50,3 +50,18 @@
     }
 
 }
+@media screen and (max-width: 1024px) {
+    .projectsContainer{
+        height: 85vh;
+        display: block;
+    }
+    .projectsContainer .projectWindow{
+        width: 90vw;
+        height: 19.66vh;
+        margin: auto;
+        margin-top: 3vh;
+    }
+    .projectsContainer .projectTitle{
+        font-size: 10vh;
+    }
+}

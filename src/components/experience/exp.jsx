@@ -2,21 +2,17 @@ import './exp.css'
 import "animate.css/animate.compat.css"
 import ScrollAnimation from 'react-animate-on-scroll';
 export const Experience = () => {
-  // <div className='reactJsPng'/>
-  //     </ScrollAnimation>
-        
-  //       <div className='htmlPng'/>
-  //       <div className='cssPng'/>
-  //    name   <div className='jsPng'/>
+
   const assets = [
     {name: "reactJsPng"},
     {name: "htmlPng"},
     {name: "cssPng"},
-    {name: "jsPng"}
+    {name: "jsPng"},
+    
   ]
   return (
     <div className="expContainer" id='experience'>
-      <div>
+      <div className='expContent'>
         <h1 className='fontFam-italic'>FRONTEND DEVELOPMENT</h1>
         <div className='tabletScreen fontFam-regular  '>
           <div className='tabRow'>
@@ -52,15 +48,8 @@ export const Experience = () => {
         </div>
       </div>
       
-      <div style={{display:"flex"}}>
-{/*       
-      <ScrollAnimation animateIn='flash' delay={300}>
-        <div className='reactJsPng'/>
-      </ScrollAnimation>
-        
-        <div className='htmlPng'/>
-        <div className='cssPng'/>
-        <div className='jsPng'/> */}
+      <div className='expAssets' >
+
         {assets.map(({name},index)=>{
           
           return (<ScrollAnimation animateIn='flash' delay={(index+1)*100+200} key={name}>

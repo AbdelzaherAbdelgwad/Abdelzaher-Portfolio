@@ -40,7 +40,6 @@
     z-index: -3;
     position: relative;
     left: -20px;
-    transform: rotate(-25deg);
 }
 .htmlPng{
     width: 50vw;
@@ -87,6 +86,7 @@
     filter: drop-shadow(0px 0px 10px #4EFF00) blur(0.1rem);
     opacity: 10%;
 }
+
 .expCard{
     height: calc(15vw/1.788);
     width: 12vw;
@@ -130,6 +130,10 @@
         justify-content: space-around;
         column-gap: 3vw;
     }
+    
+}
+.expAssets{
+    display: flex;
 }
 @keyframes rotate {
     from {
@@ -144,5 +148,54 @@
     animation: rotate 50s linear infinite;
 }
 @media screen and (max-width: 1024px) {
-    /* make it responsive */
+    div#experience{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        height: max-content;
+        padding-bottom: 9vh;
+    }
+    .expAssets{
+        display: flex;
+        scale: 1.8;
+        left: 95vw;
+        position: relative;
+        .reactJsPng{
+            filter: drop-shadow(-16px 6px 17px #4EFF00) blur(.3rem);
+        }
+    }
+    .expContent{
+        width: 80%;
+        transform: translate(0,6vw);
+        object-fit: cover;
+    }
+    .tabletScreen{
+        height: fit-content;
+        width: 100%;
+        margin-left: 0;
+        padding-top: 1vw;
+        
+    }
+    .tabletScreen .tabRow{
+        display: block;
+        width: 90%;
+    }
+    .tabletScreen .expCard{
+        margin-bottom: 1vw;
+        width: 100%;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .tabletScreen .tabRow h2{
+        font-size: 4vw;
+        margin: 2px;
+    }
+    .expContainer h1{
+        font-size: 7vw;
+    }
 }
