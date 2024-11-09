@@ -17,12 +17,13 @@ export const Projects = () => {
   
 
   function handleClick(e) {
-    const className = e.target.classList[2]
-    if(className === "firstProject"){
-      window.open("https://github.com/AbdelzaherAbdelgwad/Game-Center", "_blank")
-    }else if(className === "secondProject"){
-      window.open("https://github.com/AbdelzaherAbdelgwad/IOT_WebApp", "_blank")
-    }else if(className === "projectTitle"){
+
+    const className = e.target.classList.value
+    if( className.includes("firstProject")){
+      window.open(slides[0].link, "_blank")
+    }else if(className.includes("secondProject")){
+      window.open(slides[1].link, "_blank")
+    }else if(className.includes("projectTitle")){
       window.open("https://github.com/AbdelzaherAbdelgwad", "_blank")
     }
   }

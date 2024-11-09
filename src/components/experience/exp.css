@@ -10,6 +10,7 @@
     grid-template-columns: repeat(2,auto);
     align-items: center;
     overflow: hidden;
+    caret-color: transparent;
 
     h1{
         font-size: 5vw;
@@ -124,6 +125,7 @@
     row-gap: 0vw;
     align-items: center;
     justify-items: center;
+    z-index: 1;
     
     .tabRow{
         display: flex;
@@ -134,6 +136,8 @@
 }
 .expAssets{
     display: flex;
+    position: relative;
+    z-index: -1;
 }
 @keyframes rotate {
     from {
@@ -160,7 +164,7 @@
         display: flex;
         scale: 1.8;
         left: 95vw;
-        position: relative;
+
         .reactJsPng{
             filter: drop-shadow(-16px 6px 17px #4EFF00) blur(.3rem);
         }

@@ -36,6 +36,50 @@
     font-size: 3.5vw;
     margin-top: 0;
 }
+.slideContainer{
+    overflow: hidden;
+}
+@keyframes nextAnimation{
+    from{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(55%);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateX(110%);
+        opacity: 0;
+    }
+}
+
+@keyframes nextHideAnimation{
+    from{
+        transform: translateX(-110%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-55%);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.nextAnimation{
+    animation: nextAnimation .2s ease-in forwards;
+}
+.nextHideAnimation{
+    animation: nextHideAnimation .2s ease-out forwards;
+}
+.prevAnimation{
+    animation: nextHideAnimation .2s ease-in reverse forwards; 
+}
+.prevHideAnimation{
+    animation: nextAnimation .2s ease-out reverse forwards;
+}
 @media screen and (max-width: 1024px) {
     .carouselContainer{
         height: 75vh;
@@ -53,6 +97,35 @@
     }
     .arrow{
         transform: rotate(90deg);
+    }
+    @keyframes nextAnimation{
+        from{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        50% {
+            transform: translateY(55%);
+            opacity: 0.5;
+        }
+        to{
+            transform: translateY(110%);
+            opacity: 0;
+        }
+    }
+    
+    @keyframes nextHideAnimation{
+        from{
+            transform: translateY(-110%);
+            opacity: 0;
+        }
+        50% {
+            transform: translateY(-55%);
+            opacity: 0.5;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 }
 
