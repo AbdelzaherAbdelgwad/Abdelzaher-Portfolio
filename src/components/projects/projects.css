@@ -12,6 +12,7 @@
     justify-content: space-around;
 
     .projectTitle{
+        margin: auto 2vw;
         color: #4EFF00;
         caret-color: transparent;
         font-size: 10vw;
@@ -32,7 +33,7 @@
         caret-color: transparent;
     }
     .projectWindow:hover{
-        filter: drop-shadow(0px 0px 20px white);
+        filter: drop-shadow(0px 0px 5px white);
         cursor: pointer;
         scale: 1.02;
     }
@@ -53,15 +54,18 @@
 @media screen and (max-width: 1024px) {
     .projectsContainer{
         height: 85vh;
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
     }
-    .projectsContainer .projectWindow{
+    /* .projectsContainer .projectWindow{
         width: 90vw;
         height: 19.66vh;
         margin: auto;
         margin-top: 3vh;
-    }
+    } */
     .projectsContainer .projectTitle{
         font-size: 10vh;
     }
+   
+  
 }
