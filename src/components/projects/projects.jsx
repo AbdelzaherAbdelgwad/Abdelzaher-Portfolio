@@ -12,18 +12,26 @@ export const Projects = () => {
       class: "secondProject",
       title: "IOT Web App",
       link: "https://github.com/AbdelzaherAbdelgwad/IOT_WebApp"
+    },
+    {
+      class: "thirdProject",
+      title: "Examination System DB",
+      link: "https://github.com/AbdelzaherAbdelgwad/ITI-Examination-system"
+    },
+    {
+      class: "fourthProject",
+      title: "Tabeekh",
+      link: "https://github.com/AhmedNadyRamadan/Tabeekh"
     }
   ]
   
 
   function handleClick(e) {
-
     const className = e.target.classList.value
-    if( className.includes("firstProject")){
-      window.open(slides[0].link, "_blank")
-    }else if(className.includes("secondProject")){
-      window.open(slides[1].link, "_blank")
-    }else if(className.includes("projectTitle")){
+    const slide = slides.find(s => className.includes(s.class))
+    if (slide) {
+      window.open(slide.link, "_blank")
+    } else if (className.includes("projectTitle")) {
       window.open("https://github.com/AbdelzaherAbdelgwad", "_blank")
     }
   }

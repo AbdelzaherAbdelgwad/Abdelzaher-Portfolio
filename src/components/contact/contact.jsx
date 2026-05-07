@@ -51,7 +51,7 @@ export const Contact = () => {
             <div className="backGround"></div>
             </div>
             <div className="bottomContactCard">
-                <div><a href="https://www.linkedin.com/in/abdelzaher-a-600477110/" target="_blank"><h2>LINKEDIN</h2></a></div>
+                <div><a href="https://www.linkedin.com/in/AbdelzaherAbdelgwad/" target="_blank"><h2>LINKEDIN</h2></a></div>
                 <div><a href="https://github.com/AbdelzaherAbdelgwad" target="_blank"><h2>GITHUB</h2></a></div>
                 {/* <div><a href="mailto:abdelzaher.abdelgwad@gmail.com"><h2>EMAIL</h2></a></div> */}
             </div>

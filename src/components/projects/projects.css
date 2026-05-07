@@ -49,6 +49,36 @@
         background-position: center;
         background-size: cover;
     }
+    .thirdProject{
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .thirdProject::after{
+        content: "EXAM DB";
+        color: #4EFF00;
+        font-size: 3vw;
+        font-family: fantasy;
+        opacity: 30%;
+        letter-spacing: 0.5vw;
+    }
+    .fourthProject{
+        background: linear-gradient(135deg, #2d1b00 0%, #3d2a0f 50%, #1a0f00 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .fourthProject::after{
+        content: "TABEEKH";
+        color: #ff9040;
+        font-size: 3vw;
+        font-family: fantasy;
+        opacity: 30%;
+        letter-spacing: 0.5vw;
+    }
 
 }
 @media screen and (max-width: 1024px) {

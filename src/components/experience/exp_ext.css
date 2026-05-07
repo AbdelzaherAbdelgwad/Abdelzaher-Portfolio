@@ -33,11 +33,11 @@
         font-style: italic;
     }
     .title_1{
-        color: #000000;    
-        margin-top: 7.5vw;    
+        color: #000000;
+        margin-top: 4vw;
         /* -webkit-text-stroke: .00000000000001px #4EFF00; */
         text-shadow:
-            -1px -1px 0#4EFF00,  
+            -1px -1px 0#4EFF00,
             1px -1px 0 #4EFF00,
             -1px 1px 0 #4EFF00,
             1px 1px 0 #4EFF00;
@@ -45,10 +45,12 @@
     .gridBlock{
         display: flex;
         justify-content: center;
-        margin: 5vw;
+        flex-wrap: wrap;
+        gap: 1vw;
+        margin: 3vw 5vw;
         h2{
             color: white;
-            font-size: 2vw;
+            font-size: 1.5vw;
             margin: auto;
             text-transform: uppercase;
         }
@@ -61,7 +63,8 @@
         border: white 1px solid;
         align-content: center;
         width: 13vw;
-        height: 8vw  
+        height: 5vw;
+        padding: 0.5vw;
     }
     .gridSquare:hover{
         cursor: pointer;
@@ -70,17 +73,19 @@
 }
 @media screen and (max-width: 1024px) {
     .expExtContainer{
-        height: 80vh;
+        height: fit-content;
+        min-height: 80vh;
         padding-top: 5vh;
+        padding-bottom: 5vh;
     }
     .expExtContainer .backGroundImg{
         height: 100vh;
         scale: 1.2;
         background-size: auto;
     }
-    .expExtContainer .title_1,
-    .expExtContainer .title_2{
+    .expExtContainer .title_1{
         font-size: 4vh;
+        margin-top: 2vh;
     }
     .expExtContainer .gridBlock{
         flex-wrap: wrap;
@@ -88,9 +93,10 @@
     }
     .expExtContainer .gridSquare {
         width: 25vw;
-        height: 15vw;
+        height: 12vw;
+        padding: 1vw;
     }
     .expExtContainer .gridBlock h2{
-        font-size: 2.5vh;
+        font-size: 2vh;
     }
 }

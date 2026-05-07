@@ -11,7 +11,7 @@ export const Education = () => {
           Systems,web development
         </p>
         <p>Graduate Project:
-          <span>“SIMA- Securing IoT Devices Against Malicious Attacks”</span>
+          <span>“SIMA - Securing IoT Devices Against Malicious Attacks”</span> | Grade: <span>Excellent</span>
         </p>
         <ul>
           <li>Implemented advanced encryption and authentication protocols to enhance

@@ -6,11 +6,11 @@ export const About = () => {
   return (
     <div className='aboutContainer fontFam-regular' id='about'>
         <h1>ABOUT ME</h1>
-        <p> &lt; Results-driven computer science graduate with <span>3+ years</span> of hands-on experience in Full-stack web development. 
-        Specialized in building scalable, responsive web applications using <span>React.js, Spring Boot, and MySQL</span>. 
-        Seeking a challenging role as a <span>Front-End or full-stack Developer</span> in a dynamic tech company where I can leverage 
-        my expertise in front-end design, RESTful API development, and database optimization to drive innovation and deliver 
-        high-quality software solutions /&gt; </p>
+        <p> &lt; Software engineer with <span>2+ years</span> of professional experience and strong software engineering fundamentals
+        transferable across programming languages and frameworks. Experienced in designing, building, and maintaining scalable
+        systems using <span>Go, Python, React.js, Angular, TypeScript, and ASP.NET Core</span>. Proficient in database design,
+        RESTful API development, and secure authentication and authorization. Seeking a Software Engineering role where solid
+        engineering principles, problem-solving skills, and adaptability across technologies are valued. /&gt; </p>
         <button onClick={handleClick}><a>CONTACT ME</a>  &gt;</button>
         <div className='bgImage'/>
         

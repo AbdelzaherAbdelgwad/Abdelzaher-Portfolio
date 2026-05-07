@@ -1,34 +1,139 @@
 
 .expContainer{
     height: calc(var(--width_dim)/1.77);
-    /* width: var(--width_dim); */
-    /* background-color: red; */
     border-radius: 10px;
     border: 1px rgb(117, 117, 117) solid;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: 1fr;
     align-items: center;
     overflow: hidden;
     caret-color: transparent;
+    padding: 0 3vw;
 
     h1{
-        font-size: 5vw;
+        font-size: 4vw;
         font-weight: 900;
         font-family: fantasy;
         color: #4EFF00;
-        margin-left: 2vw;
-        margin-bottom: 0;
-        transform: translate(1vw,1.5vw);
+        margin-left: 0;
+        margin-bottom: 2.5vw;
         position: relative;
         width: fit-content;
-        
     }
     h1:hover{
         cursor: pointer;
         filter:drop-shadow(0px 0px 20px #4EFF00);
     }
 }
+
+.expContent{
+    width: 100%;
+    z-index: 1;
+}
+
+/* ===== 2-Column Cards ===== */
+.timeline{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+}
+
+.timelineEntry{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.timelineDot{
+    display: none;
+}
+
+.timelineContent{
+    background-color: rgba(30, 30, 30, 0.7);
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 0.8vw;
+    padding: 1.8vw 2vw;
+    width: 100%;
+
+    h2{
+        margin: 0;
+        color: white;
+        font-size: 1.8vw;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        span{
+            color: #888;
+            font-size: 1.2vw;
+            font-weight: 400;
+            text-transform: none;
+            display: block;
+            margin-top: 0.2vw;
+        }
+    }
+
+    .timelineDate{
+        margin: 0.5vw 0 0.8vw 0;
+        color: #4EFF00;
+        font-size: 1.1vw;
+    }
+}
+
+.timelineTags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5vw;
+    margin-bottom: 0.2vw;
+}
+
+.timelineHighlights{
+    margin: 0.8vw 0 0 0;
+    padding: 0;
+    list-style: none;
+    color: #ccc;
+    font-size: 1.15vw;
+    line-height: 1.9vw;
+    font-weight: 600;
+
+    li{
+        margin-bottom: 0.3vw;
+        padding-left: 1.5vw;
+        position: relative;
+    }
+    li::before{
+        content: "—";
+        position: absolute;
+        left: 0;
+        color: #4EFF00;
+        opacity: 60%;
+    }
+}
+
+.tag{
+    padding: 0.35vw 1vw;
+    font-size: 1vw;
+    color: #ccc;
+    background-color: rgba(78, 255, 0, 0.08);
+    border: 1px solid rgba(78, 255, 0, 0.25);
+    border-radius: 0.3vw;
+    white-space: nowrap;
+}
+.tag:hover{
+    background-color: rgba(78, 255, 0, 0.15);
+    color: #4EFF00;
+    cursor: default;
+}
+
+/* ===== Background logos ===== */
+.expAssets{
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
 .reactJsPng{
     width: 50vw;
     height: 50vw;
@@ -39,118 +144,62 @@
     filter: drop-shadow(-16px 6px 17px #4EFF00) blur(.4rem);
     opacity: 8%;
     z-index: -3;
-    position: relative;
-    left: -20px;
+    position: absolute;
+    left: -5vw;
+    top: -5vw;
 }
 .htmlPng{
     width: 50vw;
     height: 50vw;
-    position: relative;
-    left: -65vw;
+    position: absolute;
+    right: 5vw;
+    top: -5vw;
     background-image: url("/Abdelzaher-Portfolio/images/Html.png");
-    background-size: 11vw;
-    background-position: top 2vw left 40vw;
-    background-repeat: no-repeat;
+    background-size: 10vw;
     background-position: center;
-    top: -15vw;
-    filter: drop-shadow(0px 0px 10px #4EFF00) blur(0.1rem);
-    opacity: 10%;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 10px #4EFF00) blur(0.15rem);
+    opacity: 12%;
     z-index: -1;
-
 }
 .cssPng{
     width: 50vw;
     height: 50vw;
-    position: relative;
-    left: -118vw;
+    position: absolute;
+    left: 10vw;
+    bottom: -10vw;
     background-image: url("/Abdelzaher-Portfolio/images/css.png");
-    background-size: 11vw;
-    background-position: top 2vw left 40vw;
-    background-repeat: no-repeat;
+    background-size: 10vw;
     background-position: center;
-    top: 8vw;
-    filter: drop-shadow(0px 0px 10px #4EFF00) blur(0.1rem);
-    opacity: 10%;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 10px #4EFF00) blur(0.15rem);
+    opacity: 12%;
     z-index: -1;
 }
 .jsPng{
     width: 50vw;
     height: 50vw;
-    position: relative;
-    left: -140vw;
+    position: absolute;
+    right: 15vw;
+    bottom: -5vw;
     background-image: url("/Abdelzaher-Portfolio/images/js.png");
-    background-size: 11vw;
-    background-position: top 2vw left 40vw;
-    background-repeat: no-repeat;
+    background-size: 10vw;
     background-position: center;
-    top: -5vw;
-    filter: drop-shadow(0px 0px 10px #4EFF00) blur(0.1rem);
-    opacity: 10%;
-}
-
-.expCard{
-    height: calc(15vw/1.788);
-    width: 12vw;
-    background-color: rgb(48, 48, 48);;
-    border: 2px solid rgb(78, 78, 78);
-    border-radius: 1vw;
-    text-align: center;
-    align-content: space-evenly;
-
-    h2{
-        margin: 1vw;
-        color: white;
-        font-size: 2.2vw;
-        margin-bottom: 0;
-        margin-top: 0;
-        font-weight: 300;
-    }
-}
-.expCard:hover{
-    cursor: pointer;
-    scale: 1.1;
-    filter:drop-shadow(0px 0px 20px #ffffff);
-}
-.tabletScreen{
-    height: calc(60vw / 1.788);
-    width: 50vw;
-    background-color: #1E1E1E;
-    caret-color: transparent;
-    border: .5vw solid rgb(74, 74, 74);
-    margin-left: 2vw;
-    border-radius: 1rem;
-    /* overflow: hidden; */
-    position: relative;
-    display: grid;
-    row-gap: 0vw;
-    align-items: center;
-    justify-items: center;
-    z-index: 1;
-    
-    .tabRow{
-        display: flex;
-        justify-content: space-around;
-        column-gap: 3vw;
-    }
-    
-}
-.expAssets{
-    display: flex;
-    position: relative;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 10px #4EFF00) blur(0.15rem);
+    opacity: 12%;
     z-index: -1;
 }
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
 
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
 .rotate {
     animation: rotate 50s linear infinite;
 }
+
+/* ===== Mobile ===== */
 @media screen and (max-width: 1024px) {
     div#experience{
         display: flex;
@@ -160,46 +209,54 @@
         height: max-content;
         padding-bottom: 9vh;
     }
-    .expAssets{
-        display: flex;
-        scale: 1.8;
-        left: 95vw;
-
-        .reactJsPng{
-            filter: drop-shadow(-16px 6px 17px #4EFF00) blur(.3rem);
-        }
-    }
     .expContent{
-        width: 80%;
+        width: 95%;
         transform: translate(0,6vw);
-        object-fit: cover;
     }
-    .tabletScreen{
-        height: fit-content;
-        width: 100%;
-        margin-left: 0;
-        padding-top: 1vw;
-        
-    }
-    .tabletScreen .tabRow{
-        display: block;
-        width: 90%;
-    }
-    .tabletScreen .expCard{
-        margin-bottom: 1vw;
-        width: 100%;
-        border-radius: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .tabletScreen .tabRow h2{
-        font-size: 4vw;
-        margin: 2px;
+    .expContainer{
+        padding: 0 4vw;
     }
     .expContainer h1{
-        font-size: 7vw;
+        font-size: 6vw;
+        margin-bottom: 5vw;
+        margin-left: 0;
+    }
+    .timeline{
+        grid-template-columns: 1fr;
+        gap: 4vw;
+    }
+    .timelineContent{
+        padding: 3vw 4vw;
+    }
+    .timelineContent h2{
+        font-size: 4vw;
+        span{
+            font-size: 3vw;
+        }
+    }
+    .timelineContent .timelineDate{
+        font-size: 2.5vw;
+        margin: 0.8vw 0 1.5vw;
+    }
+    .tag{
+        font-size: 2.2vw;
+        padding: 0.6vw 1.4vw;
+        border-radius: 0.5vw;
+    }
+    .timelineTags{
+        gap: 1vw;
+    }
+    .timelineHighlights{
+        font-size: 2.6vw;
+        line-height: 4vw;
+        color: #ddd;
+        font-weight: 600;
+        li{
+            margin-bottom: 0.6vw;
+            padding-left: 3vw;
+        }
+    }
+    .reactJsPng, .htmlPng, .cssPng, .jsPng{
+        background-size: 18vw;
     }
 }
